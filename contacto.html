@@ -24,34 +24,43 @@
 
     <div id="contacto">
         <div id="formulario-contacto">
-            <div class="formulario-nombre">
-                <input type="text" placeholder="Nombre completo">
-            </div>
-            <div class="formulario-email">
-                <input type="email" placeholder="Correo Electrónico">
-            </div>
+            <form action="?" method="get">
+                <div class="formulario-nombre">
+                    <input type="text" placeholder="Nombre completo" name="nombre">
+                </div>
+                <div class="formulario-email">
+                    <input type="email" placeholder="Correo Electrónico" name="email">
+                </div>
+                <div class="formulario-telefono">
+                    <input type="text" placeholder="Telefono" name="telefono">
+                </div>
+                <div class="formulario-asunto">
+                    <input type="text" placeholder="Asunto" name="asunto">
+                </div>
+                <div class="formulario-mensaje">
+                    <textarea id="Textarea-mensaje" rows="5" placeholder="Mensaje"
+                        name="mensaje"></textarea>
+                </div>
+                <div class="formulario-acciones">
+                    <input type="submit" value="Enviar">
+                </div>
 
-            <div class="formulario-telefono">
-                <input type="text" placeholder="Telefono">
-            </div>
-            <div class="formulario-asunto">
-                <input type="text" placeholder="Asunto">
-            </div>
-            <div class="formulario-descripcion">
-                <textarea id="Textarea-descripcion" rows="5"></textarea>
-            </div>
+            </form>
         </div>
-        <div id="informacion-contacto">
-            <h2>Información de Contacto</h2>
-            <p>Dirección: Calle 3 y 5, avenida 6, 50 metros osete del mercado municipal de artesanias, San José, Capital, 10104, Costa Rica</p>
-            <p>Teléfono: +506 1234 5678</p>
-            <p>Email: info@academiapro.com</p>
-        </div>
-        <div id="mapa">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5557.907935058811!2d-84.07767731077244!3d9.931093960140977!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1780451659690!5m2!1sen!2sus"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="columna-derecha">
+            <div id="informacion-contacto">
+                <h2>Información de Contacto</h2>
+                <p>Dirección: Calle 3 y 5, avenida 6, 50 metros oeste del mercado municipal de artesanias, San José,
+                    Capital, 10104, Costa Rica</p>
+                <p>Teléfono: +506 1234 5678</p>
+                <p>Email: info@academiapro.com</p>
+            </div>
+            <div id="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5557.907935058811!2d-84.07767731077244!3d9.931093960140977!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1780451659690!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </div>
     <footer>
