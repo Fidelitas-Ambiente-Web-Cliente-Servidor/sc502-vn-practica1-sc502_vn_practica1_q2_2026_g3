@@ -7,6 +7,26 @@
     background: #f7f9fc;
 }
 
+.encabezado-pagina {
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+    background: #f7f9fc;
+}
+
+.encabezado-pagina h1 {
+    color: #1f3c88;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.encabezado-pagina p {
+    color: #555555;
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
 #formulario-contacto {
     flex: 1;
     display: flex;
