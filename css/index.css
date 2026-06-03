@@ -1,0 +1,185 @@
+.hero {
+  background: #fff;
+  border-radius: 14px;
+  padding: 50px 35px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 22px rgba(31, 60, 136, 0.12);
+}
+
+.hero-tag {
+  color: #4f8cff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  color: #1f3c88;
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #1f3c88;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background: #4f8cff;
+  color: #fff;
+}
+
+.hero-box {
+  background: #f7f9fc;
+  border-left: 5px solid #4f8cff;
+  border-radius: 10px;
+  padding: 28px;
+  margin-top: 20px;
+}
+
+.hero-box h2 {
+  color: #1f3c88;
+  margin-bottom: 10px;
+}
+
+.section {
+  margin-bottom: 45px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.section-title h2 {
+  color: #1f3c88;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.section-title p {
+  color: #555;
+}
+
+.course-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 6px 18px rgba(31, 60, 136, 0.12);
+  transition: 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 20px;
+}
+
+.card-info h3 {
+  color: #1f3c88;
+  margin-bottom: 10px;
+}
+
+.card-info p {
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.card-info a {
+  color: #4f8cff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card-info a:hover {
+  color: #1f3c88;
+}
+
+.stats {
+  background: #1f3c88;
+  padding: 35px;
+  border-radius: 14px;
+  margin-bottom: 45px;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  height: 100%;
+}
+
+.stat-card h3 {
+  color: #4f8cff;
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.stat-card p {
+  font-weight: bold;
+}
+
+.testimonial {
+  background: #fff;
+  border-left: 5px solid #4f8cff;
+  border-radius: 10px;
+  padding: 24px;
+  height: 100%;
+  box-shadow: 0 6px 18px rgba(31, 60, 136, 0.1);
+}
+
+.testimonial p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.testimonial h3 {
+  color: #1f3c88;
+  margin-bottom: 4px;
+}
+
+.testimonial span {
+  color: #4f8cff;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 20px;
+  }
+
+  .hero {
+    padding: 35px 20px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .stats {
+    padding: 22px;
+  }
+}
