@@ -1,0 +1,104 @@
+#profesores {
+  padding: 10px 0;
+}
+
+#encabezado-profesores {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#encabezado-profesores h1 {
+  color: #1f3c88;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+#encabezado-profesores p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+  color: #222;
+}
+
+.profesor-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 6px 18px rgba(31, 60, 136, 0.12);
+}
+
+.profesor-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.profesor-info {
+  padding: 20px;
+}
+
+.profesor-info h3 {
+  color: #1f3c88;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.profesor-info .especialidad {
+  color: #4f8cff;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.profesor-info p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.metodologia-caja {
+  background: #fff;
+  border-radius: 14px;
+  padding: 40px 30px;
+  margin-top: 60px;
+  box-shadow: 0 8px 22px rgba(31, 60, 136, 0.12);
+}
+
+.metodologia-caja h2 {
+  color: #1f3c88;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.metodologia-item {
+  background: #f7f9fc;
+  border-left: 5px solid #4f8cff;
+  border-radius: 10px;
+  padding: 24px;
+  height: 100%;
+}
+
+.metodologia-item h3 {
+  color: #1f3c88;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.metodologia-item p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  #encabezado-profesores h1 {
+    font-size: 28px;
+  }
+  
+  .metodologia-caja {
+    padding: 25px 20px;
+  }
+}
