@@ -25,31 +25,44 @@
 
     <div class="encabezado-pagina">
         <h1>Ponte en contacto con nosotros</h1>
-        <p>¿Tienes dudas sobre nuestros cursos, horarios o profesores? Completa el formulario para poder brindarte la mejor atención.</p>
+        <p>¿Tienes dudas sobre nuestros cursos, horarios o profesores? Completa el formulario para poder brindarte la
+            mejor atención.</p>
     </div>
 
     <div id="contacto">
         <div id="formulario-contacto">
-            <form action="?" method="get">
-                <div class="formulario-nombre">
-                    <input type="text" placeholder="Nombre completo" name="nombre">
+            <form id="form-contacto" action="?" method="get">
+
+                <div class="formulario-grupo">
+                    <input type="text" placeholder="Nombre completo" name="nombre" id="input-nombre">
+                    <span id="error-nombre" class="error-mensaje"></span>
                 </div>
-                <div class="formulario-email">
-                    <input type="email" placeholder="Correo Electrónico" name="email">
+
+                <div class="formulario-grupo">
+                    <input type="email" placeholder="Correo Electrónico" name="email" id="input-email">
+                    <span id="error-email" class="error-mensaje"></span>
                 </div>
-                <div class="formulario-telefono">
-                    <input type="text" placeholder="Telefono" name="telefono">
+
+                <div class="formulario-grupo">
+                    <input type="text" placeholder="Telefono" name="telefono" id="input-telefono">
+                    <span id="error-telefono" class="error-mensaje"></span>
                 </div>
-                <div class="formulario-asunto">
-                    <input type="text" placeholder="Asunto" name="asunto">
+
+                <div class="formulario-grupo">
+                    <input type="text" placeholder="Asunto" name="asunto" id="input-asunto">
+                    <span id="error-asunto" class="error-mensaje"></span>
                 </div>
-                <div class="formulario-mensaje">
-                    <textarea id="Textarea-mensaje" rows="5" placeholder="Mensaje"
-                        name="mensaje"></textarea>
+
+                <div class="formulario-grupo">
+                    <textarea id="Textarea-mensaje" rows="5" placeholder="Mensaje" name="mensaje"></textarea>
+                    <span id="error-mensaje" class="error-mensaje"></span>
                 </div>
+
                 <div class="formulario-acciones">
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar" id="btn-envio" disabled>
                 </div>
+
+                <div id="mensaje-exito" class="exito-oculto"></div>
 
             </form>
         </div>
@@ -74,6 +87,7 @@
         <p>Facebook | Instagram | TikTok</p>
         <p>Creado por grupo 3</p>
     </footer>
+    <script src="js/contacto.js"></script>
 </body>
 
 </html>
