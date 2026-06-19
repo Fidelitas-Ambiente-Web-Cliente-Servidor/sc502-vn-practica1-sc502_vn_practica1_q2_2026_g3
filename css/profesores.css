@@ -102,3 +102,7 @@
     padding: 25px 20px;
   }
 }
+
+#profesores .col-12 {
+    transition: opacity 0.3s ease;
+}
