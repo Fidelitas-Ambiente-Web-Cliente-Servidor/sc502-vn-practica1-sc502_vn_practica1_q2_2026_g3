@@ -96,6 +96,17 @@
   padding: 20px;
 }
 
+.course-category {
+  display: inline-block;
+  background: #eef4ff;
+  color: #1f3c88;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
 .card-info h3 {
   color: #1f3c88;
   margin-bottom: 10px;
