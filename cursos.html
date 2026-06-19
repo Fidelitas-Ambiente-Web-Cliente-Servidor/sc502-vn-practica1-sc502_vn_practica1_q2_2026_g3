@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cursos - Academia Pro</title>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cursos.css">
 </head>
@@ -22,96 +23,37 @@
         </nav>
     </header>
 
-    <div id="cursos">
+    <section id="cursos">
 
         <div id="encabezado-cursos">
-            <h1>Cursos de Idiomas</h1>
+            <h1>Catálogo de Cursos</h1>
+
             <p>
-                Aprenda nuevos idiomas con programas diseñados para mejorar sus habilidades de comunicación y ampliar sus oportunidades académicas y profesionales.
+                Explore nuestra oferta académica y encuentre el idioma ideal para desarrollar nuevas oportunidades personales y profesionales.
             </p>
         </div>
 
         <div id="busqueda-cursos">
-            <input type="text" placeholder="Buscar curso...">
+            <input type="text" id="buscarCurso" placeholder="Buscar curso por nombre o descripción...">
         </div>
 
-        <div class="categoria">
-            <h2>Idiomas Más Populares</h2>
-
-            <div class="contenedor-cursos">
-
-                <div class="curso">
-                    <img src="img/ingles.jpg" alt="Curso de Inglés">
-                    <h3>Inglés</h3>
-                    <p><strong>Categoría:</strong> Idiomas Populares</p>
-                    <p>Desarrolle habilidades para comunicarse con confianza en inglés.</p>
-                    <p><strong>Duración:</strong> 12 semanas</p>
-                    <p><strong>Precio:</strong> ₡120 000</p>
-                </div>
-
-                <div class="curso">
-                    <img src="img/frances.jpg" alt="Curso de Francés">
-                    <h3>Francés</h3>
-                    <p><strong>Categoría:</strong> Idiomas Populares</p>
-                    <p>Aprenda uno de los idiomas más utilizados en Europa.</p>
-                    <p><strong>Duración:</strong> 10 semanas</p>
-                    <p><strong>Precio:</strong> ₡115 000</p>
-                </div>
-
-                <div class="curso">
-                    <img src="img/italiano.jpg" alt="Curso de Italiano">
-                    <h3>Italiano</h3>
-                    <p><strong>Categoría:</strong> Idiomas Populares</p>
-                    <p>Descubra el idioma y la cultura italiana desde cero.</p>
-                    <p><strong>Duración:</strong> 10 semanas</p>
-                    <p><strong>Precio:</strong> ₡110 000</p>
-                </div>
-
-            </div>
+        <div id="filtros-categoria">
+            <button data-categoria="Todos">Todos</button>
+            <button data-categoria="Idiomas Populares">Idiomas Populares</button>
+            <button data-categoria="Idiomas Internacionales">Idiomas Internacionales</button>
         </div>
 
-        <div class="categoria">
-            <h2>Otros Idiomas</h2>
+        <div id="contenedorCursos"></div>
 
-            <div class="contenedor-cursos">
-
-                <div class="curso">
-                    <img src="img/portugues.jpg" alt="Curso de Portugués">
-                    <h3>Portugués</h3>
-                    <p><strong>Categoría:</strong> Idiomas Internacionales</p>
-                    <p>Aprenda a comunicarse en uno de los idiomas más hablados del mundo.</p>
-                    <p><strong>Duración:</strong> 8 semanas</p>
-                    <p><strong>Precio:</strong> ₡100 000</p>
-                </div>
-
-                <div class="curso">
-                    <img src="img/aleman.jpg" alt="Curso de Alemán">
-                    <h3>Alemán</h3>
-                    <p><strong>Categoría:</strong> Idiomas Internacionales</p>
-                    <p>Desarrolle competencias para estudiar o trabajar en Alemania.</p>
-                    <p><strong>Duración:</strong> 12 semanas</p>
-                    <p><strong>Precio:</strong> ₡130 000</p>
-                </div>
-
-                <div class="curso">
-                    <img src="img/japones.jpg" alt="Curso de Japonés">
-                    <h3>Japonés</h3>
-                    <p><strong>Categoría:</strong> Idiomas Internacionales</p>
-                    <p>Introducción al idioma y cultura japonesa.</p>
-                    <p><strong>Duración:</strong> 14 semanas</p>
-                    <p><strong>Precio:</strong> ₡140 000</p>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
+    </section>
 
     <footer>
         <p>Academia Pro © 2026</p>
         <p>Facebook | Instagram | TikTok</p>
-        <p>Creado por grupo 3</p>
+        <p>Creado por Grupo 3</p>
     </footer>
+
+    <script src="js/cursos.js"></script>
 
 </body>
 
