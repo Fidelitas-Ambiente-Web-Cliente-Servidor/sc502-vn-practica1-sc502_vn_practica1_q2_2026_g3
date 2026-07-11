@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+/*document.addEventListener('DOMContentLoaded', function () {
     const formulario = document.getElementById('form-contacto');
     const btnEnvio = document.getElementById('btn-envio');
     const exitoMensaje = document.getElementById('mensaje-exito');
@@ -123,3 +123,4 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 5000);
     });
 });
+*/
