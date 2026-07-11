@@ -1,4 +1,4 @@
-/*document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     const formulario = document.getElementById('form-contacto');
     const btnEnvio = document.getElementById('btn-envio');
     const exitoMensaje = document.getElementById('mensaje-exito');
@@ -103,7 +103,7 @@
     asunto.addEventListener('input', validarAsunto);
     mensaje.addEventListener('input', validarMensaje);
 
-    formulario.addEventListener("submit", function (e) {
+    /*formulario.addEventListener("submit", function (e) {
         e.preventDefault();
 
         exitoMensaje.textContent = "¡Formulario enviado exitosamente!";
@@ -121,6 +121,20 @@
             exitoMensaje.textContent = "";
             exitoMensaje.className = "exito-oculto";
         }, 5000);
+    });*/
+
+    // Validación final antes de enviar el formulario
+    formulario.addEventListener("submit", function (e) {
+        validarNombre();
+        validarEmail();
+        validarTelefono();
+        validarAsunto();
+        validarMensaje();
+
+        const formularioValido = estadoNombre && estadoEmail && estadoTelefono && estadoAsunto && estadoMensaje;
+
+        if (!formularioValido) {
+            e.preventDefault();
+        }
     });
 });
-*/
