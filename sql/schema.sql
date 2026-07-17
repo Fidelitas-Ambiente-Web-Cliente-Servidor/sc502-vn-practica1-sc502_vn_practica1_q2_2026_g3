@@ -38,3 +38,20 @@ INSERT INTO contacto (nombre, email, telefono, asunto, mensaje) VALUES
   ('Laura Jimenez Solano',  'ljimenez@example.com', '86778899', 'Clases para principiantes', 'Estoy interesada en un curso de japones para principiantes.'),
   ('Diego Alberto Vargas',  'davargas@example.com', '89001122', 'Certificacioness', 'Quisiera saber si al terminar el curso de frances se entrega algun tipo de certificacion oficial.'),
   ('Sofia Castro Herrera',  'scastro@example.com',  '85334455', 'Clases corporativas', 'Buenas, represento a una empresa y queremos cotizar clases grupales de italiano para empleados.');
+
+-- Tabla profesores
+CREATE TABLE IF NOT EXISTS profesores (
+    id           INT           NOT NULL AUTO_INCREMENT,
+    nombre       VARCHAR(100)  NOT NULL,
+    especialidad VARCHAR(100)  NOT NULL,
+    imagen       VARCHAR(255)  NOT NULL,
+    biografia    TEXT          NOT NULL,
+    PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO profesores (nombre, especialidad, imagen, biografia) VALUES
+('Laura Whitfield', 'Inglés', 'assets/img/profesores/laura-whitfield.jpg', 'Laura es licenciada en Filología Inglesa por la Universidad de Cambridge, con más de 10 años de experiencia enseñando inglés general y de negocios. Se especializa en preparación para exámenes TOEFL e IELTS y ha vivido en Londres y Nueva York.'),
+('Jean-Pierre Moreau', 'Francés', 'assets/img/profesores/jean-pierre-moreau.jpg', 'Jean-Pierre nació en Lyon y cuenta con un máster en Didáctica del Francés Lengua Extranjera (FLE). Ha trabajado en la Alianza Francesa durante 8 años, enfocándose en conversación fluida y cultura francófona.'),
+('Greta Hoffmann', 'Alemán', 'assets/img/profesores/greta-hoffmann.jpg', 'Greta es originaria de Múnich y posee una certificación oficial del Goethe-Institut. Tiene amplia experiencia enseñando alemán técnico y de negocios a estudiantes universitarios y profesionales.'),
+('Marco Rossi', 'Italiano', 'assets/img/profesores/marco-rossi.jpg', 'Marco es de Florencia y se graduó en Lingüística Aplicada. Combina metodologías comunicativas con inmersión cultural, ayudando a sus estudiantes a alcanzar fluidez conversacional en tiempo récord.'),
+('Beatriz Santos', 'Portugués', 'assets/img/profesores/beatriz-santos.jpg', 'Beatriz es de Lisboa y cuenta con más de 6 años de experiencia enseñando portugués europeo y brasileño. Se especializa en pronunciación y comprensión auditiva para principiantes.');
